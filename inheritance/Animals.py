@@ -7,10 +7,10 @@ class Animal:
         print("Animals Class is initialized")
 
     def eatMethod(self):
-        print("All Animals Eat")
+        print(f"This animal eats {self.eat}")
 
     def speakMethod(self):
-        print("All Animals Speak")
+        print(f"This animal sounds {self.speak}")
 
     def liveMethod(self):
-        print("All Animals have a habitat")
+        print(f"This animal lives in {self.speak}")
