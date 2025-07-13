@@ -1,4 +1,6 @@
 # To run the program, use the command `python Simulator.py`
+from utility.Util import Util
+from enums.FuelType import FuelType
 from abstraction.ElectricCar import ElectricCar
 from abstraction.Motorcycle import MotorCycle
 from abstraction.Car import Car
@@ -10,20 +12,32 @@ from abstraction.IndianCar import IndianCar
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
+Util.print_separation(None,"Basic")
 basic.simple_method()
 basic.simple_method_with_parameter("Abhishek Tiwari")
+print(f"{basic.simple_method_with_return_value()}")
 basic.simple_string_array()
 basic.create_all_numeric_variables()
 basic.create_all_character_variables()
 basic.create_all_boolean_variables()
 basic.create_all_sequence_variables()
 
+Util.print_separation(None,"Inheritance")
 truffles = Dog("Truffles")
 print(truffles.speak_method())
 
 ivy = Cat("Ivy")
 print(ivy.eat_method())
 print(ivy.speak_method())
+
+Util.print_separation(None,"Polymorphism")
+print("Example Regarding Polymorphism")
+# Polymorphism in Python
+animals = [truffles, ivy]
+for animal in animals:
+    print(animal.speak_method())
+
+print("-" * 100)
 
 chevrolet = IndianCar("Chevrolet")
 print(chevrolet.start())
@@ -56,3 +70,10 @@ vehicles = [normalCar, electricCar, motorcycle]
 
 for vehicle in vehicles:
     operate_vehicle(vehicle)
+
+Util.print_separation(None, "Enum Example")
+
+# Printing Enum Values
+print(FuelType.ELECTRIC)
+print(FuelType.ELECTRIC.value)
+

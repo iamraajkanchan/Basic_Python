@@ -19,10 +19,11 @@ class Basic:
         print("This is a simple method in the Basic class.")
 
     def simple_method_with_parameter (self, new_name):
-
         print(f"Changing programmer name from {self.programmer_name} to {new_name}")
         self.programmer_name = new_name
         print(f"Programmer name changed to {self.programmer_name}")
+    def simple_method_with_return_value(self):
+        return False
 
     def simple_string_array(self) :
         languages = ["Kotlin", "Swfit", "Java", "Python"]
