@@ -1,9 +1,12 @@
 # To run the program, use the command `python Simulator.py`
+from abstraction.ElectricCar import ElectricCar
+from abstraction.Motorcycle import MotorCycle
+from abstraction.Car import Car
 from encapsulation.BankUser import BankUser
 from inheritance.Cats import Cat
 from basics.Basic import Basic
 from inheritance.Dogs import Dog
-from abstraction.Car import Car
+from abstraction.IndianCar import IndianCar
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
@@ -22,7 +25,7 @@ ivy = Cat("Ivy")
 print(ivy.eat_method())
 print(ivy.speak_method())
 
-chevrolet = Car("Chevrolet")
+chevrolet = IndianCar("Chevrolet")
 print(chevrolet.start())
 print(chevrolet.stop())
 
@@ -34,3 +37,22 @@ raj.set_balance(43000.50)
 print(raj.get_user_name())
 print(raj.get_user_bank_name())
 print(raj.get_balance())
+
+
+#Function that can work with any Vehicle Implementation
+def operate_vehicle(vehicle_object) :
+    print(f"Operating a vehicle that uses {vehicle_object.get_fuel_type()}")
+    print(vehicle_object.start_engine())
+    print(vehicle_object.honk())
+    print(vehicle_object.stop_engine())
+    print("-" * 40)
+
+
+normalCar = Car("Toyota", "Camry")
+electricCar = ElectricCar("Tesla", "Model 3", 98)
+motorcycle = MotorCycle("Hero", "Splendor +")
+
+vehicles = [normalCar, electricCar, motorcycle]
+
+for vehicle in vehicles:
+    operate_vehicle(vehicle)
