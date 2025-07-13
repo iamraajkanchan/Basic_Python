@@ -1,5 +1,5 @@
 # To run the program, use the command `python Simulator.py`
-
+from encapsulation.BankUser import BankUser
 from inheritance.Cats import Cat
 from basics.Basic import Basic
 from inheritance.Dogs import Dog
@@ -25,3 +25,12 @@ print(ivy.speak_method())
 chevrolet = Car("Chevrolet")
 print(chevrolet.start())
 print(chevrolet.stop())
+
+raj = BankUser()
+raj.set_user_name("Tony Stark")
+raj.set_user_bank_name("HDFC Bank Limited")
+raj.set_balance(43000.50)
+
+print(raj.get_user_name())
+print(raj.get_user_bank_name())
+print(raj.get_balance())
