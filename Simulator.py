@@ -1,7 +1,16 @@
 # To run the program, use the command `python Simulator.py`
 from basics.Basic import Basic
+from inherit.Dogs import Dogs
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
 basic.simpleMethod()
-basic.simpleMethodWithParameter("Abhishek Tiwari")
+# basic.simpleMethodWithParameter("Abhishek Tiwari")
+# basic.simpleStringArray()
+# basic.createAllNumericVariables()
+# basic.createAllCharacterVariables()
+# basic.createAllBooleanVariables()
+# basic.createAllSequenceVariables()
+
+#buddy = Dogs("Truffles")
+# print(buddy.speak())
