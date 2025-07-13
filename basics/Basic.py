@@ -1,6 +1,4 @@
-# Use PascalCase to define a define a class in Python, just like we do in Java.
-from setuptools.config import StaticModule
-
+# Use PascalCase to define a class in Python, just like we do in Java.
 
 class Basic:
 
