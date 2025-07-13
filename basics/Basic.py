@@ -16,7 +16,7 @@ class Basic:
     def simpleMethod(self):
         print("This is a simple method in the Basic class.")
 
-    def changeProgrammerName (self, newName):
+    def simpleMethodWithParameter (self, newName):
 
         print(f"Changing programmer name from {self.programmerName} to {newName}")
         self.programmerName = newName

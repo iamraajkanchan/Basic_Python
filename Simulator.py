@@ -4,4 +4,4 @@ from basics.Basic import Basic
 
 basic = Basic()
 basic.simpleMethod()
-basic.changeProgrammerName("Abhishek Tiwari")
+basic.simpleMethodWithParameter("Abhishek Tiwari")
