@@ -1,6 +1,9 @@
 # To run the program, use the command `python Simulator.py`
+
+from inheritance.Cats import Cat
 from basics.Basic import Basic
 from inheritance.Dogs import Dog
+from abstraction.Car import Car
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
@@ -12,5 +15,13 @@ basic.create_all_character_variables()
 basic.create_all_boolean_variables()
 basic.create_all_sequence_variables()
 
-buddy = Dog("Truffles")
-print(buddy.speakMethod())
+truffles = Dog("Truffles")
+print(truffles.speak_method())
+
+ivy = Cat("Ivy")
+print(ivy.eat_method())
+print(ivy.speak_method())
+
+chevrolet = Car("Chevrolet")
+print(chevrolet.start())
+print(chevrolet.stop())

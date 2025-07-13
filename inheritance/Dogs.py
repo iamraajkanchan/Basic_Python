@@ -1,5 +1,4 @@
 from .Animals import Animal
-
 class Dog(Animal):
 
     def __init__(self, name):
@@ -7,9 +6,9 @@ class Dog(Animal):
         self.name = name
         # To change the attribute of the base class use self, don't use super()
         self.speak = "barks"
-        print("Dogs class is initialized")
+        print("Initializing a derived Dog Object.")
 
-    def speakMethod(self):
+    def speak_method(self):
         # Use super() only to invoke base class methods.
-        super().speakMethod()
+        super().speak_method()
         return f"{self.name} {self.speak}"

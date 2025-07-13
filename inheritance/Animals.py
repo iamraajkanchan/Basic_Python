@@ -4,13 +4,13 @@ class Animal:
     live = "house"
 
     def __init__(self):
-        print("Animals Class is initialized")
+        print("Initializing the Base Animal Object.")
 
-    def eatMethod(self):
-        print(f"This animal eats {self.eat}")
+    def eat_method(self):
+        print(f"This animal eats {self.eat} to feed himself/herself")
 
-    def speakMethod(self):
-        print(f"This animal sounds {self.speak}")
+    def speak_method(self):
+        print(f"This animal {self.speak} to speak")
 
-    def liveMethod(self):
-        print(f"This animal lives in {self.speak}")
+    def live_method(self):
+        print(f"This animal lives in {self.speak} to shelter himself/herself.")
