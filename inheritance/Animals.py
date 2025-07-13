@@ -14,3 +14,14 @@ class Animals:
 
     def liveMethod(self):
         print("All Animals have a habitat")
+
+class Dogs(Animals):
+
+    def __init__(self, name):
+        super().__init__()
+        self.name = name
+        self.speak = "barks"
+        print("Dogs class is initialized")
+
+    def speakMethod(self):
+        return f"{self.name} {self.speak}"

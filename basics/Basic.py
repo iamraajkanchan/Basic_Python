@@ -1,6 +1,11 @@
-class Basic:    
+# Use PascalCase to define a define a class in Python, just like we do in Java.
+from setuptools.config import StaticModule
 
-    programmerName = "Raj Kanchan"
+
+class Basic:
+
+    # Use snake case to define a variable and functions in Python, unlike camel case in Java.
+    programmer_name = "Raj Kanchan"
 
     def __init__(self):
         print("Basic class initialized.")
@@ -12,41 +17,40 @@ class Basic:
     # Without self, you cannot access instance variables or methods from within the class.
 
     '''
-
-    def simpleMethod(self):
+    def simple_method(self):
         print("This is a simple method in the Basic class.")
 
-    def simpleMethodWithParameter (self, newName):
+    def simple_method_with_parameter (self, new_name):
 
-        print(f"Changing programmer name from {self.programmerName} to {newName}")
-        self.programmerName = newName
-        print(f"Programmer name changed to {self.programmerName}")
+        print(f"Changing programmer name from {self.programmer_name} to {new_name}")
+        self.programmer_name = new_name
+        print(f"Programmer name changed to {self.programmer_name}")
 
-    def simpleStringArray(self) :
+    def simple_string_array(self) :
         languages = ["Kotlin", "Swfit", "Java", "Python"]
         print(languages)
 
-    def createAllNumericVariables(self) :
-        simpleIntegerNumber = 29
-        simpleDecimalNumber = 1029.24
-        simpleComplexNumber = 2 + 3j
+    def create_all_numeric_variables(self) :
+        simple_integer_number = 29
+        simple_decimal_number = 1029.24
+        simple_complex_number = 2 + 3j
         # f is used to concatenate string with a variable. Use it when you are printing a output.
-        print(f"Simple Integer Number : {simpleIntegerNumber}")
-        print(f"Simple Decimal Number : {simpleDecimalNumber}")
+        print(f"Simple Integer Number : {simple_integer_number}")
+        print(f"Simple Decimal Number : {simple_decimal_number}")
     
-    def createAllCharacterVariables(self) :
-        simpleString = "Hello World!"
-        print(f"Simple String : {simpleString}")
-        simpleCharacter = 'A'
-        print(f"Simple Character : {simpleCharacter}")
+    def create_all_character_variables(self) :
+        simple_string = "Hello World!"
+        print(f"Simple String : {simple_string}")
+        simple_character = 'A'
+        print(f"Simple Character : {simple_character}")
         
-    def createAllBooleanVariables(self) :
-        simpleTrueBoolean = True
-        simpleFalseBoolean = False
-        print(f"Simple True Boolean : {simpleTrueBoolean}")
-        print(f"Simple False Boolean : {simpleFalseBoolean}")
+    def create_all_boolean_variables(self) :
+        simple_true_boolean = True
+        simple_false_boolean = False
+        print(f"Simple True Boolean : {simple_true_boolean}")
+        print(f"Simple False Boolean : {simple_false_boolean}")
         
-    def createAllSequenceVariables(self) :
+    def create_all_sequence_variables(self) :
         # This is a ordered, mutable list
         evens = [2,4,6,8]
         print(f"Simple Ordered, Mutable List : {evens}")
@@ -59,8 +63,8 @@ class Basic:
         for i in numbers :
             print(f"Value in numbers {i}")
         # This is limited range
-        newNumbers = range(10, 20)
-        print(f"Simple Range Starting from 10 to 19 {newNumbers}")
-        for i in newNumbers:
-            print(f"Value in newNumbers {i}")
+        new_numbers = range(10, 20)
+        print(f"Simple Range Starting from 10 to 19 {new_numbers}")
+        for i in new_numbers:
+            print(f"Value in new_numbers {i}")
         
