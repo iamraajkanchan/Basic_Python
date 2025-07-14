@@ -9,6 +9,7 @@ from inheritance.Cats import Cat
 from basics.Basic import Basic
 from inheritance.Dogs import Dog
 from abstraction.IndianCar import IndianCar
+from abstraction.Jeep import Jeep
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
@@ -76,4 +77,9 @@ Util.print_separation(None, "Enum Example")
 # Printing Enum Values
 print(FuelType.ELECTRIC)
 print(FuelType.ELECTRIC.value)
+
+Util.print_separation(None, "Abstraction Example")
+
+myJeep = Jeep()
+myJeep.start_engine()
 
