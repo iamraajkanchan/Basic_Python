@@ -9,4 +9,7 @@
 6. String Variables
 7. Integer Variables
 8. Double Variables
-9. 
+9. Abstraction
+10. Encapsulation
+11. Inheritance
+12. 
