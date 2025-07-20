@@ -12,4 +12,4 @@
 9. Abstraction
 10. Encapsulation
 11. Inheritance
-12. 
+12. Duck Type concept
