@@ -23,11 +23,19 @@
    def create_user():
 2. Example of defining method signature with parameters inside a class:
     
-   def example_of_basic_if_else_condition(self, i):
-3. Example of call the above method is:
+   
+    def example_of_basic_if_else_condition(self, i):
+3. Example of calling the above method is:
 
-   xyx.example_of_basic_if_else_condition(3)
+   
+    xyx.example_of_basic_if_else_condition(3)
 4. Example of defining method signature with parameters which is static:
 
-   def print_separation(used_for):
-5. Hello
+   
+    @staticmethod
+    def print_separation(used_for):
+5. Example of calling the above method is:
+
+
+    printSeparation(None, "If Else Condition Example") 
+6. Hello world
