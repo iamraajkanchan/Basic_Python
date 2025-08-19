@@ -67,10 +67,21 @@ class Basic:
         for i in new_numbers:
             print(f"Value in new_numbers {i}")
 
-    def exampleOfWhileLoop(self):
+    def example_of_while_loop(self):
         numbers = [1,2,3,4,5]
         i = 0
-        while(i < len(numbers)):
-            print(f"Array values {numbers[i]}")
+        while i < len(numbers):
+            print(f"Get array element using while loop: {numbers[i]}")
             i += 1
+
+    def example_of_for_loop(self):
+        numbers = [1,2,3,4,5]
+        for i in numbers:
+            print(f"Get array element using for loop: {i}")
+
+    def example_of_basic_if_else_condition(self, i):
+        if i % 2 == 0:
+            print("The parameter of this function is an even number")
+        else:
+            print("The parameter of this function is an odd number")
 

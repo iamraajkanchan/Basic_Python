@@ -13,7 +13,7 @@ from abstraction.Jeep import Jeep
 # basics is the name of the package and Basic.py is the name of file which contains the Basic class
 
 basic = Basic()
-Util.print_separation(None,"Basic")
+Util.print_separation("Basic")
 basic.simple_method()
 basic.simple_method_with_parameter("Abhishek Tiwari")
 print(f"{basic.simple_method_with_return_value()}")
@@ -23,7 +23,7 @@ basic.create_all_character_variables()
 basic.create_all_boolean_variables()
 basic.create_all_sequence_variables()
 
-Util.print_separation(None,"Inheritance")
+Util.print_separation("Inheritance")
 truffles = Dog("Truffles")
 print(truffles.speak_method())
 
@@ -31,7 +31,7 @@ ivy = Cat("Ivy")
 print(ivy.eat_method())
 print(ivy.speak_method())
 
-Util.print_separation(None,"Polymorphism")
+Util.print_separation("Polymorphism")
 print("Example Regarding Polymorphism")
 # Polymorphism in Python
 animals = [truffles, ivy]
@@ -72,17 +72,25 @@ vehicles = [normalCar, electricCar, motorcycle]
 for vehicle in vehicles:
     operate_vehicle(vehicle)
 
-Util.print_separation(None, "Enum Example")
+Util.print_separation( "Enum Example")
 
 # Printing Enum Values
 print(FuelType.ELECTRIC)
 print(FuelType.ELECTRIC.value)
 
-Util.print_separation(None, "Abstraction Example")
+Util.print_separation("Abstraction Example")
 
 myJeep = Jeep()
 myJeep.start_engine()
 
-Util.print_separation(None, "While Loop Example")
-basic.exampleOfWhileLoop()
+Util.print_separation("While Loop Example")
+basic.example_of_while_loop()
 
+Util.print_separation("For Loop Example")
+basic.example_of_for_loop()
+
+Util.print_separation("Basic If Else Condition Example")
+basic.example_of_basic_if_else_condition(3)
+
+Util.print_separation("Basic If Else Condition Example")
+basic.example_of_basic_if_else_condition(2)
