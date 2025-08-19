@@ -83,3 +83,6 @@ Util.print_separation(None, "Abstraction Example")
 myJeep = Jeep()
 myJeep.start_engine()
 
+Util.print_separation(None, "While Loop Example")
+basic.exampleOfWhileLoop()
+

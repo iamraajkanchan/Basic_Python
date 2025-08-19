@@ -66,4 +66,11 @@ class Basic:
         print(f"Simple Range Starting from 10 to 19 {new_numbers}")
         for i in new_numbers:
             print(f"Value in new_numbers {i}")
-        
+
+    def exampleOfWhileLoop(self):
+        numbers = [1,2,3,4,5]
+        i = 0
+        while(i < len(numbers)):
+            print(f"Array values {numbers[i]}")
+            i += 1
+
