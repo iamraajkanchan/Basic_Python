@@ -94,3 +94,6 @@ basic.example_of_basic_if_else_condition(3)
 
 Util.print_separation("Basic If Else Condition Example")
 basic.example_of_basic_if_else_condition(2)
+
+Util.print_separation("Basic Match Condition Example")
+print(f"Integer 4 maps to is {basic.example_of_basic_match_condition(4)}")

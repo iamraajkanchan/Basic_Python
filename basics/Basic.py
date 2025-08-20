@@ -85,3 +85,22 @@ class Basic:
         else:
             print("The parameter of this function is an odd number")
 
+    # Note to use the match condition you have to update the python to 3.10+
+    def example_of_basic_match_condition(self, i):
+        match i:
+            case 1:
+                return "Sunday"
+            case 2:
+                return "Monday"
+            case 3:
+                return "Tuesday"
+            case 4:
+                return "Wednesday"
+            case 5:
+                return "Thursday"
+            case 6:
+                return "Friday"
+            case 7:
+                return "Saturday"
+        return None
+

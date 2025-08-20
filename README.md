@@ -18,24 +18,24 @@
 # Concepts
 ## Methods
 
-1. Example of defining simple method signature:
+*. Example of defining simple method signature:
 
-   def create_user():
-2. Example of defining method signature with parameters inside a class:
+    def create_user():
+*. Example of defining method signature with parameters inside a class:
     
-   
+
     def example_of_basic_if_else_condition(self, i):
-3. Example of calling the above method is:
+*. Example of calling the above method is:
 
    
     xyx.example_of_basic_if_else_condition(3)
-4. Example of defining method signature with parameters which is static:
+*. Example of defining method signature with parameters which is static:
 
    
     @staticmethod
     def print_separation(used_for):
-5. Example of calling the above method is:
+*. Example of calling the above method is:
 
 
     printSeparation(None, "If Else Condition Example") 
-6. Hello world
+*. Hello world
